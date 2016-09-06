@@ -21,21 +21,23 @@ def wait_two():
 import msvcrt as m
 def wait():
     m.getch()
-    
-print(" Mini Game by Nicholas Dominici")
 
-def menu():  # Game Menu
-    start0 = input("Type 'start' to begin the game>>")
+
+def gameover():  # Game Over
+    start0 = input("Type 'start' to restart the game>>")
 
     # Checks if the player entered start or not.
     if start0 == "start":
         import scene0.py
-    
+            
     elif start0 == "Start":
         import scene0.py
-
+          
     else:
         print("Type start please!")
         print
-        menu()
-menu()
+        gameover()
+
+gameover()
+
+
